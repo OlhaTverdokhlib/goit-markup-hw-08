@@ -2,7 +2,7 @@
   "name": "goit-markup-hw-08",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://OlhaTverdokhlib.github.io/goit-markup-hw-08",
+  "homepage": "https://OlhaTverdokhlib.github.io/goit-markup-hw-08/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-markup-hw-08/"
