@@ -1,0 +1,78 @@
+.subscription {
+  display: flex;
+}
+
+.email-subscription {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 93px;
+  width: 570px;
+
+  &__text {
+    @extend .down-social__text;
+  }
+  &__field {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    text-align: justify;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid $inutBorderEmail;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 28px;
+    align-items: center;
+    padding-left: 16px;
+    color: $overlayProject;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+    &:focus {
+      outline: none;
+      background-color: transparent;
+      border: 1px solid $inutBorderEmail;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    }
+  }
+  &__btn {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    text-align: start;
+    padding-left: 28px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: none;
+    color: $whiteColor;
+    background-color: $accentColor;
+    box-shadow: 0px 4px 4px $buttonShadow;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $buttonHover;
+    }
+  }
+  &__icon {
+    position: absolute;
+    fill: $whiteColor;
+    top: 12px;
+    right: 28px;
+  }
+}

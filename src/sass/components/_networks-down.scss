@@ -1,0 +1,39 @@
+.down-social {
+  display: inline-block;
+  width: 206px;
+  height: 80px;
+  margin-top: 12px;
+  margin-left: 70px;
+
+  &__text {
+    font-weight: 700;
+    line-height: 1.14;
+    color: $overlayProject;
+    text-transform: uppercase;
+  }
+}
+
+.networks-down {
+  @extend .networks;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  &__item {
+    @extend .networks__item;
+    margin-top: 0;
+  }
+
+  &__link {
+    @extend .networks__link;
+    color: $whiteColor;
+    background-color: $socialBottom;
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+      color: $whiteColor;
+    }
+  }
+}

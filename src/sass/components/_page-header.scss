@@ -1,0 +1,10 @@
+.page-header {
+    border-bottom: 1px solid $headerLineColor;
+
+&__block {
+        display: flex;
+        // @extend %container;
+        align-items: center;
+    } 
+}
+

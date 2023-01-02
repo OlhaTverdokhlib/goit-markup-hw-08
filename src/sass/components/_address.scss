@@ -1,0 +1,45 @@
+.address {
+  margin-top: 20px;
+}
+
+.address-list {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+
+  &__item {
+    margin-bottom: 9px;
+    width: 231px;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    text-decoration: none;
+    width: 231px;
+    margin-bottom: 190px;
+    line-height: 1.71;
+    color: $whiteColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      opacity: 1;
+    }
+  }
+  .address-contacts__link {
+    @extend .contacts__link;
+    color: $addressFooterColor;
+  }
+}

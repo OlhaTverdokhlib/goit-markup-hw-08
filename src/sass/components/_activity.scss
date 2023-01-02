@@ -1,0 +1,43 @@
+.activity {
+    // @extend %section;
+    padding-top: 0;
+    // padding-bottom: 94px;
+    // @extend %container;
+}
+
+.section-title {
+    @extend %section-title;
+}
+
+.activity-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    gap: 30px;
+
+    &__item {
+        position: relative;
+    }
+    &__label {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        padding: 27px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $overlayProject;
+        background-color: $labelBackground;
+        margin-top: 0;
+        margin-left: 0
+    }
+
+}
+.no-top-padding {
+    padding-top: 0;
+}

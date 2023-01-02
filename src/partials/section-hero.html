@@ -1,0 +1,74 @@
+<section class="hero">
+    <div class="container">
+      <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
+      <button type="button" class="button hero__button" data-modal-open>
+        Замовити послугу
+      </button>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg width="18px" height="18px" class="modal__icon">
+            <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal-form__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <div class="modal-form__field">
+            <label class="modal-form__label">Ім'я</label>
+            <input type="text" class="modal-form__input" name="name" />
+            <svg width="18px" height="18px" class="modal-form__icon">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <div class="modal-form__field">
+            <label class="modal-form__label">Телефон</label>
+            <input type="tel" class="modal-form__input" name="phone" />
+
+            <svg width="18px" height="18px" class="modal-form__icon">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <div class="modal-form__field">
+            <label class="modal-form__label">Пошта</label>
+            <input type="email" class="modal-form__input" name="email" />
+
+            <svg width="18px" height="18px" class="modal-form__icon">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <div class="modal-form__field">
+            <label class="modal-form__label">Коментар</label>
+            <textarea
+              class="modal-form__comment"
+              name="comment"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <label class="checkbox__field">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="confirm-newsletter"
+              value="confirm"
+              required
+            />
+            <span class="checkbox__icon"></span>
+            <span class="checkbox__text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="link__contract">Умови договору</a></span
+            >
+          </label>
+
+        <button type="submit" class="button modal-form__btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </section>

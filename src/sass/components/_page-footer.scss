@@ -1,0 +1,18 @@
+.page-footer {
+    // @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $backgroundHeroColor;
+}
+.box {
+    // @extend %container;
+    display: flex;
+}
+.logo {
+    @extend .logo;
+
+.page-footer__logo--accent {
+    color: $whiteColor;
+  }
+}
+
