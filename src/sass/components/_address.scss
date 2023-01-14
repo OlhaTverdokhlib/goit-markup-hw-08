@@ -1,18 +1,40 @@
 .address {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+}
+
+@media screen and (min-width: 1200px) {
+   align-items: start;
+   justify-content: start;
+   margin-right: 70px;
+   margin-left: 0;    
 }
 
 .address-list {
-  display: inline-block;
+  // display: inline-block;
+padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 60;
   padding-left: 0;
   list-style: none;
+  font-size: 14px;
   text-decoration: none;
 
+
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    
+  }
+
   &__item {
+   
     margin-bottom: 9px;
-    width: 231px;
+    // width: 231px;
 
     &:hover,
     &:focus {
@@ -41,5 +63,11 @@
   .address-contacts__link {
     @extend .contacts__link;
     color: $addressFooterColor;
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      
+    }
   }
+}
 }

@@ -1,4 +1,9 @@
 .activity {
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+        
+    }
     // @extend %section;
     padding-top: 0;
     // padding-bottom: 94px;
@@ -40,4 +45,5 @@
 }
 .no-top-padding {
     padding-top: 0;
+    padding-bottom: 0;
 }

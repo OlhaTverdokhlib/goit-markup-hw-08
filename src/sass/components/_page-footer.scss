@@ -6,13 +6,34 @@
 }
 .box {
     // @extend %container;
-    display: flex;
-}
-.logo {
-    @extend .logo;
+    // display: flex;
+    align-content: center;
+    text-align: center;
 
-.page-footer__logo--accent {
-    color: $whiteColor;
-  }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        
+        // margin-left: 76px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        text-align: start;
+        // display: flex;
+        // max-width: 1200px;
+    }
 }
+// .logo {
+//     @extend .logo;
+     
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 115px;
+        
+    // }
+
+// .page-footer__logo--accent {
+//     color: $whiteColor;
+//   }
 

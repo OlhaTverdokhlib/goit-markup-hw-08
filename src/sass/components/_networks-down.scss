@@ -1,11 +1,20 @@
 .down-social {
-  display: inline-block;
-  width: 206px;
-  height: 80px;
-  margin-top: 12px;
-  margin-left: 70px;
+//   margin-top: 60px;
+//   @media screen and (min-width: px) {
+//      margin-top: 0;
 
-  &__text {
+// }
+   
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        width: 206px;
+        height: 80px;
+        margin-top: 12px;
+        margin-right: 94px;
+        // margin-bottom: 99px;
+    }
+        
+    &__text {
     font-weight: 700;
     line-height: 1.14;
     color: $overlayProject;
@@ -18,7 +27,7 @@
   padding: 0;
   list-style: none;
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 60;
 
   &__item {
     @extend .networks__item;

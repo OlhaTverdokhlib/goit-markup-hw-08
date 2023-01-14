@@ -1,26 +1,85 @@
-
 .contacts {
-    // @extend %container;
-    @extend %list;
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
-    &__link {
-        display: flex;
-        align-items: center;
-        color: $secondaryTextColor;
-        text-decoration: none;
-        font-style: normal;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %list;
+  // margin-top: 306px;
+  margin-left: auto;
+  display: flex;
 
-        &:hover,
-        &:focus {
-            color: $accentColor;
-        }
-      }
-      
-    &__icon {
-       fill: currentColor;
-       margin-right: 10px;
-     }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+  // flex-direction: column-reverse;
+  // gap: 32px;
+  // justify-content: flex-end;
+  // gap: 50px;
+
+  &__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      align-items: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    // display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    font-size: 14px;
+
+    font-style: normal;
+    color: $secondaryTextColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-top: 32px;
+      padding-bottom: 32px;
+  }
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    padding: 0;
+    margin-bottom: 0;
+    align-items: center;
+    // display: none;
+  }
+
+  // &__tel {
+  //   color: $mobContactsColor;
+  //   font-weight: 500;
+  //   line-height: 1.176;
+  //   letter-spacing: 0.02em;
+  // }
+  // &__mail {
+  //   color: $secondaryTextColor;
+  //   font-weight: 500;
+  //   font-size: 24px;
+  //   line-height: 1.167;
+  // }
+}

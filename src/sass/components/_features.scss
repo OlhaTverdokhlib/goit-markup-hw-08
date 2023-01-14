@@ -1,25 +1,53 @@
 .features-list {
     // @extend %section;
     // @extend %container;
-  display: flex;
+//   display: flex;
+display: block;
   margin-top: 0;
   padding-left: 0;
   color: $secondaryTextColor;
   line-height: 1.71;
   list-style: none;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
   &__item {
-    width: 270px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    // min-width: 450px;
+    // width: 100%;
+    // margin-right: 30px;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;    
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
     }
   }
 
   &__card {
     display: flex;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
@@ -39,11 +67,16 @@
   }
 
   &__title {
+    // text-align: center;
     margin-top: 0;
+    text-align: center;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     color: $primaryTextColor;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+        }
   }
 }

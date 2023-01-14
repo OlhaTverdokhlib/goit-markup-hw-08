@@ -1,36 +1,99 @@
-.subscription {
-  display: flex;
+.email-subscription {
+    @media screen and(min-width:768px) and (max-width:1199px) {
+        width: 450px;
+    }
+//   display: block;
+//   align-items: center;
+//   padding-top: 60px;
+//   @media screen and(min-width:1200px) {
+//  padding-top: 0;
+// } 
+&__text {
+    @extend .down-social__text;
+
+  }
+  
+  &__form {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+    // display: flex;
+    // flex-direction: column;
+  //     @media screen and (min-width: 1200px) {
+  //     flex-direction: row;
+  //     align-items: center;
+  //     // margin-top: 12px;
+  //     // margin-left: 94px;
+  //   }
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //   width: 450px;
+    // }
+
 }
 
-.email-subscription {
-  display: flex;
-  flex-direction: column;
-  margin-top: 12px;
-  margin-left: 93px;
-  width: 570px;
 
-  &__text {
-    @extend .down-social__text;
-  }
+  
+
+  //   width: 570px;
+
+ 
+
   &__field {
-    display: flex;
-    margin-top: 12px;
+    // display: flex;
+    display: block;
+    margin-top: 20px;
     align-items: center;
     text-align: justify;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
   }
   &__input {
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     height: 50px;
-    margin-right: 12px;
-    background-color: transparent;
-    border: 1px solid $inutBorderEmail;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding: 0;
-    padding-left: 28px;
-    align-items: center;
-    padding-left: 16px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     color: $overlayProject;
+    outline: none;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-right: 12px;
+            margin-bottom: 0;
+        }
+    // max-width: 450px;
+    // width: 100%;
+    // height: 50px;
+    // // margin-right: 12px;
+    // margin-bottom: 20px;
+    // // margin-top: 20px;
+    // background-color: transparent;
+    // border: 1px solid $inutBorderEmail;
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    // border-radius: 4px;
+    // padding: 0;
+    // padding-left: 28px;
+    // align-items: center;
+    // padding-left: 16px;
+    // color: $overlayProject;
 
     &::placeholder {
       font-size: 16px;
@@ -45,7 +108,9 @@
     }
   }
   &__btn {
-    display: inline-block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     width: 200px;
     height: 50px;
