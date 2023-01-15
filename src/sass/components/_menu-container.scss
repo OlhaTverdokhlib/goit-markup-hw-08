@@ -211,6 +211,8 @@ margin-bottom: 32px;
   .networks-menu {
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     justify-content: start;
 
    
@@ -218,7 +220,7 @@ margin-bottom: 32px;
    
     
     &__link {
-       display: block;
+      //  display: block;
         text-decoration: none;  
         color: $mobContactsColor;        
         font-style: normal;
@@ -233,12 +235,12 @@ margin-bottom: 32px;
 &__item {
   // margin-bottom: 32px;
     padding-right: 10px;
-    padding-left: 10px;
+    margin-right: 10px;
         border-right: 1px solid $inputBorderColor;
 
         &:last-child {
             border: none;
-            padding-right: 0;
+            // padding-right: 0;
         }
         &:first-child {
             padding-left: 0;

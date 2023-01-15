@@ -58,12 +58,13 @@
             margin-bottom: 0;
         }
         @media screen and (min-width:768px) {
-            width:354px;
+            // width:354px;
+            flex-basis: calc((100% - 30px)/2);
             margin-bottom: 0;
         }
 
         @media screen and (min-width:1200px) {
-            width: 270px;
+          flex-basis: calc((100% - 30px)/4);
         }
   }
   

@@ -6,10 +6,12 @@
 // }
    
     @media screen and (min-width: 1200px) {
-        display: inline-block;
-        width: 206px;
+        display: flex;
+        flex-direction: column;
+        // width: 206px;
         height: 80px;
         margin-top: 12px;
+
         margin-right: 94px;
         // margin-bottom: 99px;
     }
